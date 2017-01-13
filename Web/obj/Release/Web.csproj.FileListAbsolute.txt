@@ -1,0 +1,12 @@
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Web.dll.config
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Web.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Web.pdb
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Library.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Microsoft.AspNet.FriendlyUrls.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Library.pdb
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Microsoft.AspNet.FriendlyUrls.xml
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\obj\Release\Web.csprojResolveAssemblyReference.cache
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\obj\Release\Web.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\obj\Release\Web.pdb
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\Microsoft.ReportViewer.WebForms.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Web\bin\MySql.Data.dll

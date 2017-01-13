@@ -1,0 +1,98 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="Web.Site_Mobile" %>
+
+<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- Início das meta tags -->
+    <meta name="title" content="Poob Shop" />
+    <meta name="description" content="Preços baixos e ótimas ofertas de vídeo-games, jogos, câmeras digitais e mais, tudo a pronta entrega na Poob Shop. Compre já!" />
+    <meta name="abstract" content="Preços baixos e ótimas ofertas de vídeo-games, jogos, câmeras digitais e mais, tudo a pronta entrega na Poob Shop. Compre já!" />
+    <meta name="keywords" content="Poob Shop, Preços baixos, Barato, Vídeo-games, Jogos, Acessórios para PlayStation, Câmeras digitais" />
+    <meta name="rating" content="general" />
+    <meta name="author" content="Poob Shop; Allex Rocha" />
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1" />-->
+    <!-- Fim das meta tags -->
+    <title></title>
+    <!-- Carrega o CSS -->
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <!--[if  IE 8]>
+	<style type="text/css">
+		#wrap {display: table;}
+	</style>
+    <![endif]-->
+    <!-- Favicon -->
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <!-- Início do código do Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-43031323-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Fim do código do Google Analytics -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="height: 100%">
+        <div class="wrap">
+            <header class="menu">
+                <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+                <telerik:RadMenu ID="RadMenu1" Width="100%" RenderMode="Mobile" runat="server">
+                    <Items>
+                        <telerik:RadMenuItem Text="Anúncios" ToolTip="Anúncios" NavigateUrl="~/Anuncios/" Target="_blank"></telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Clientes" ToolTip="Clientes" NavigateUrl="#">
+                            <Items>
+                                <telerik:RadMenuItem Text="Listar" ToolTip="Listar Clientes" NavigateUrl="~/Clientes/"></telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Produtos" ToolTip="Produtos" NavigateUrl="#">
+                            <Items>
+                                <telerik:RadMenuItem Text="Listar" ToolTip="Listar Produtos" NavigateUrl="~/Produtos/"></telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Vendas" ToolTip="Vendas" NavigateUrl="#">
+                            <Items>
+                                <telerik:RadMenuItem Text="Listar" ToolTip="Listar Vendas" NavigateUrl="~/Vendas/"></telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Serviços" ToolTip="Serviços" NavigateUrl="#">
+                            <Items>
+                                <telerik:RadMenuItem Text="E-mail Marketing" ToolTip="Serviço de E-mail Marketing" NavigateUrl="~/Servicos/Email-Marketing"></telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                        <telerik:RadMenuItem Text="Relatórios" ToolTip="Relatórios" NavigateUrl="#">
+                            <Items>
+                                <telerik:RadMenuItem Text="Clientes" ToolTip="Relatório de Clientes" NavigateUrl="~/Relatorios/Clientes"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem Text="Produtos" ToolTip="Relatório de Produtos" NavigateUrl="~/Relatorios/Produtos"></telerik:RadMenuItem>
+                                <telerik:RadMenuItem Text="Vendas" ToolTip="Relatório de Vendas" NavigateUrl="~/Relatorios/Vendas"></telerik:RadMenuItem>
+                            </Items>
+                        </telerik:RadMenuItem>
+                    </Items>
+                </telerik:RadMenu>
+                <div class="skinManager">
+                    Skin: <telerik:RadSkinManager ID="RadSkinManager1" Skin="MetroTouch" ShowChooser="true" runat="server" />
+                </div>
+            </header>
+            <div class="main">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="clear"></div>
+            </div>
+            <footer class="footer">
+                © Copyright 2014-<%: DateTime.Now.Year %> – <asp:HyperLink ID="lnkPoobShop" NavigateUrl="~/Default" ToolTip="Poob Shop" runat="server"><strong>Poob Shop</strong></asp:HyperLink> – Todos os direitos reservados.
+                <friendlyUrls:ViewSwitcher runat="server" />
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

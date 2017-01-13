@@ -1,0 +1,5 @@
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Library\bin\Release\Library.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Library\bin\Release\Library.pdb
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Library\obj\Release\Library.dll
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Library\obj\Release\Library.pdb
+C:\Users\Allex Rocha\Documents\Visual Studio 2013\Projects\Poob Shop\Library\obj\Release\Library.csprojResolveAssemblyReference.cache

@@ -1,0 +1,92 @@
+﻿html, body {
+    margin: 0;
+    height: 100%;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+img {
+    border: none;
+}
+
+fieldset {
+    border: 1px solid #E1E1E1;
+}
+
+.clear {
+    clear: both;
+}
+
+/* Wrap  */
+.wrap {
+    min-height: 100%;
+    position: relative;
+}
+
+/* Menu  */
+.menu {
+    width: 100%;
+    position: fixed;
+}
+
+/* Skin Manager */
+.skinManager{
+    top: 1px;
+    right: 1px;
+    color: #FFFFFF;
+    position: fixed;
+    z-index: 9999;
+}
+
+/* Conteúdo  */
+.main {
+    top: 58px;
+    padding: 38px 0px 50px 0px;
+    overflow: auto;
+}
+
+/* Rodapé  */
+.footer {
+    bottom: 0;
+    width: 100%;
+    height: 47px;
+    margin-top: -50px; /* Valor negativo da altura do rodapé */
+    padding-top: 3px;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #25A0DA;
+    position: absolute;
+}
+
+/* Opera Fix */
+body:before {
+    content: "";
+    height: 100%;
+    float: left;
+    width: 0;
+    margin-top: -32767px;
+}
+
+/* Erro  */
+.error {
+    top: 50%;
+    left: 50%;
+    margin-top: -202px;
+    margin-left: -211px;
+    width: 422px;
+    height: 462px;
+    position: absolute;
+}
+
+.errorCol {
+    width: 422px;
+    height: auto;
+    margin: 5px;
+    text-align: center;
+    display: table;
+    float: left;
+}
